@@ -1,6 +1,6 @@
 function fibonachiNumbers(n) {
 
-    var j = 0,
+    var j = 1,
         k = 1,
         result = 0;
 
