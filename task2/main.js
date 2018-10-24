@@ -1,15 +1,23 @@
-//console.log(fibonachiNumbers(100));
+function fibonachiNumbers(n) {
 
-function fibonachiNumbers() {
+    var j = 0,
+        k = 1,
+        result = 0;
 
-    var i=1, j=1;
-    for( ; i < 10; i++){
-        if( j !== i * i ){
-            console.log(j);
-            j++;
+    for (var i = 1; i <= n; i++) {
+
+        var summ = j + k;
+        j = k;
+        k = summ;
+
+        if( k % 2 === 0 && k < n) {
+            result += k;
         }
+
     }
+
+    return result;
 
 }
 
-fibonachiNumbers();
+console.log(fibonachiNumbers(4000000));
