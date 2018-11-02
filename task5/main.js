@@ -20,7 +20,7 @@ function smallestNumber(n,k) {
     });
     return result;
 }
-console.log(smallestNumber(1,20));
+console.log(smallestNumber(1,6));
 
 
 
